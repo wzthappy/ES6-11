@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol 创建对象属性</title>
+</head>
+<body>
+    
+    <script>
+        // 向对象中添加方法  up down
+        let game = {};
+
+        // 声明一个对象
+        // let m = {
+        //     up: Symbol(),
+        //     dowm: Symbol()
+        // };
+
+        // game[m.up] = function() {
+        //     console.log('12weq');
+        // }
+        // game[m.dowm] = function() {
+        //     console.log('wasdaw31');
+        // }
+
+        // console.log(game);
+
+        // 
+        let youxi = {
+            name: '榴莲',
+            [Symbol('say')]: function() {
+                console.log('wdsad');
+            },
+            [Symbol('ziao')]: function() {
+                console.log('s阿斯达');
+            }
+        }
+        console.log(youxi);
+    </script>
+</body>
+</html>

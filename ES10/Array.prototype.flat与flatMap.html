@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flat 与 flatMap</title>
+</head>
+<body>
+    
+    <script>
+        // flat  将多位数组转换为低维数组
+        const arr = [1,23,4,5,6, [2, 4]];
+        console.log(arr.flat());
+
+        const arr2 = [1,23,4,5, [23,34,[34,43]]];
+        console.log(arr2.flat(2));
+
+        // flatMap
+        const arr3 = [1,2,32,34];
+        const result = arr3.flatMap(item => [item * 10]);
+
+        console.log(result);
+    </script>
+</body>
+</html>

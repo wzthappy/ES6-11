@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可选链操作符</title>
+</head>
+<body>
+    
+    <script>
+        // ?.
+        function maon(config) {
+            // const dbHost = config && config.db && config.db.h;
+
+            const dbHost = config ?. db ?. h;
+
+            console.log(dbHost);
+        }
+
+        maon({
+            db: {
+                h: '1w2dw',
+                kjk: '基地啊家的'
+            },
+            cah: {
+                dkas: 'ida',
+                dl: '扩大时刻都'
+            }
+        });
+    </script>
+</body>
+</html>
